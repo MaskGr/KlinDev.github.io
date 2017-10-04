@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+font-family: Tahoma, sans-serif;
+}
+h1.header.text-center{
+    font-size: 28px;
+    line-height: 1.5;
+    margin: 60px auto;
+}
+header span{
+    display: block;
+}
+.container{
+    border: none;
+}
+.col-md-6{
+	border: none;
+}
+.form p,.section-header{
+	margin-bottom: 20px;
+font-size: 22px;
+font-weight: 900;
+}
+.form{
+	border: 5px solid #3c3bde;
+	padding: 30px 20px;
+}
+.form-btn{
+	margin: 10px auto;
+	background: #3c3bde;
+	border-radius: inherit;
+}
+.form input{
+margin-bottom: 12px;
+border-radius: inherit;
+}
+.section{ 
+	padding: 30px;
+}
+.feature{ 
+	margin-bottom: 60px;
+}
+.feature-box p {
+    padding-top: 20px;
+    font-size: 16px;
+    font-weight: 900;
+}
+.col-md-12.col-sm-12.col-xs-12 {
+    margin-bottom: 60px;
+}
+.video{
+	margin-bottom: 30px;
+}
+.clients{
+	width: 213px;
+	height: 213px;
+	margin-bottom: 32px;
+}
+.clients img{
+	width: 100%;
+}
