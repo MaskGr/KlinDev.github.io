@@ -1,0 +1,29 @@
+body{
+	background-image: url(../img/book.jpg);
+}
+.firstpage img {
+    width: 10%;
+}		
+.firstpage li {
+    font-size: x-large;
+    line-height: 1.5;
+}
+hr {
+    width: 50%;
+}
+body div {
+    width: 40%;
+    margin-left: 25%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.bold{
+	font-weight: bold;
+}
+.cursiv{
+	font-style: italic;
+}
+.text-decoration{
+	text-decoration: underline;
+}
