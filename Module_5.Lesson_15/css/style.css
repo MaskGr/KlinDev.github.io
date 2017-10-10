@@ -1,0 +1,89 @@
+body {
+	margin: 0;
+	font-size: 14px;
+	font-family: sans-serif;
+}
+
+h2 {
+	font-weight: 100;
+}
+
+.container {
+	max-width: 900px;
+	margin: auto;
+	padding: 15px;
+}
+/* Присвоил классу image псевдоэлемент и псевдокласс*/
+.image {
+	display: inline-block;
+	vertical-align: top;
+	width: 200px;
+	height: 200px;
+}
+.image::before {
+    content: '';
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    transition: .3s;
+}
+.image:hover::before{
+	background: black;
+	opacity: 0.4;
+    cursor: pointer;
+}
+/* конец */
+
+.image-one {
+	background: url(../img/1.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-two {
+	background: url(../img/2.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-three {
+	background: url(../img/3.jpg) center no-repeat;
+	background-size: cover;
+}
+.image-four {
+	background: url(../img/4.jpg) center no-repeat;
+	background-size: cover;
+}
+
+.button-one {
+	border: none;
+font-weight: 700;
+font-size: 14px;
+color: white;
+padding: 10px 20px;
+border-radius: 3px;
+background: #f35252;
+transition: 0.2s;
+}
+.button-two {
+	display: inline-block;
+color: white;
+padding: 10px 20px;
+border-radius: 3px;
+background: #0d5eea;
+transition: 0.2s;
+border: none;
+font-size: 14px;
+font-weight: 700;
+}
+
+#two {
+    text-align: center;
+}
+#two button {
+    margin-left: 20px;
+}
+.button.button-two:hover {
+    transform: translateY(5px);
+    background: blue;
+} 
+.button.button-one:hover {
+    transform: translateY(5px);
+    background: red;
+} 
