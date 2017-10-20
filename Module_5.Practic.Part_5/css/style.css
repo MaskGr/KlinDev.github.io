@@ -249,6 +249,11 @@ section {
     text-align: center;
   }
 }
+@media (max-width: 510px) {
+  .main-content h1 {
+    font-size: 2.8rem;
+  }
+}
 /* Оформление модальных окон */
 .popup {
   display: none;
