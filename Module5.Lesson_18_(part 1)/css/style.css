@@ -1,0 +1,58 @@
+/* Подключаем шрифт Ubuntu*/
+@font-face {
+  font-family: 'Ubuntu-Bold.ttf';
+  src: url('../fonts/Ubuntu-Bold.ttf');
+}
+@font-face {
+  font-family: 'Ubuntu-Regular.ttf';
+  src: url('../fonts/Ubuntu-Regular.ttf');
+}
+/* Цвета */
+body {
+  background-image: url(../img/bg.jpg);
+  font-family: 'Ubuntu-Regular.ttf';
+}
+.container {
+  width: 896px;
+  text-align: center;
+}
+.container a {
+  text-decoration: none;
+}
+.container h1,
+.container h2 {
+  text-transform: uppercase;
+}
+.container h1 {
+  font-family: 'Ubuntu-Bold.ttf', sans-serif;
+  color: #0bbaf0;
+  font-size: 36px;
+}
+.container h2 {
+  font-family: 'Ubuntu-Regular.ttf', sans-serif;
+  color: #0bbaf0;
+  font-size: 24px;
+}
+.container hr {
+  width: 124px;
+  margin-bottom: 30px;
+}
+.container .panel-heading {
+  background: #0bbaf0;
+  color: #ffffff;
+}
+.container .panel-heading:hover {
+  background: #047699;
+}
+.container .panel-title {
+  font-size: 23.2px;
+}
+.container .panel-body {
+  font-size: 22px;
+  text-align: left;
+  border-radius: 7px;
+}
+.container .panel-default {
+  border: 2px solid #dcdcdc;
+  border-radius: 7px;
+}
