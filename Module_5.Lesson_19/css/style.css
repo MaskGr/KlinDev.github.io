@@ -1,0 +1,143 @@
+body {
+  font-family: "Myriad Pro", sans-serif;
+}
+li {
+  margin-left: 9px;
+}
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input :-ms-input-placeholder {
+  color: #fff;
+}
+/* Анимация контейнера */
+@-webkit-keyframes move {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-left: 50rem;
+  }
+}
+@keyframes move {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-left: 50rem;
+  }
+}
+/* .box{
+display: inline-block;
+position: absolute;
+width: 100px;
+height: 100px;
+background-color: red;
+transform: translate(-50%,-50%);
+top: 10%;
+left: 50%;	
+z-index: 99;
+} */
+.container.animated.rubberBand {
+  position: absolute;
+  top: 13%;
+  left: 21%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.container {
+  width: 800px;
+  height: 500px;
+  background-image: url(../img/bg.jpg);
+  padding: 20px 88px 36px 83px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.container .active {
+  background: url(../img/form-bg.png) center no-repeat;
+}
+.container .nav {
+  padding-left: 27px;
+}
+.container .nav-tabs {
+  border-bottom: none;
+}
+.container .form-horizontal {
+  height: 406px;
+  padding: 90px 79px 0 66px;
+}
+.container .form-horizontal .form-control {
+  height: 61px;
+  margin-top: 12px;
+  background: url(../img/input.png) no-repeat;
+  font-size: 24px;
+  border: none;
+  background-position-x: center;
+  width: 481px;
+  padding-top: 12px;
+}
+.container .form-horizontal .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.container .form-horizontal .zabyliparol {
+  color: #c51f03;
+  font-size: 15px;
+  margin: 22px 0 0 28px;
+}
+.container .btn {
+  display: inline-block;
+  position: absolute;
+  background-image: url(../img/button-bg.png);
+  width: 126px;
+  height: 41px;
+  font-size: 24px;
+  padding: 0;
+  border-radius: inherit;
+  border: none;
+  color: #fff;
+  background-position-x: right;
+  top: 20px;
+  left: 382px;
+  padding-top: 3px;
+}
+.container .btn:before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  background-image: url(../img/flaps_left.png);
+  z-index: 99;
+  top: 41px;
+  right: 1px;
+  background-position: center;
+}
+.container .checkbox {
+  display: inline-block;
+  position: absolute;
+  left: -43px;
+  top: 28px;
+  color: #6f6d6d;
+  font-size: 15px;
+}
+.container li.active a {
+  padding: 3px 22px 4px 22px;
+  width: 103px;
+  background: #03a5db;
+  color: #fff;
+  font-size: 24px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+.container a.redistr {
+  background: #fff;
+  color: #000;
+  font-size: 24px;
+  padding: 6px 14px 0px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
