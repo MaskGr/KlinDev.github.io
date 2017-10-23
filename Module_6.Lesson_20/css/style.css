@@ -1,0 +1,23 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.section {
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+  color: #fff;
+}
+.wrap-block h1 {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  border: 1px solid #fff;
+}
