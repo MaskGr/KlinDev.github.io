@@ -30,6 +30,7 @@
 	font-family: 'ProximaNova_bold', sans-serif;
 }
 /* Colors */
+@problems-color: #e8e8e8;
 @btn-color: #fcb203;
 @icon-color: #46b814;
 @text: #1a1820;
@@ -66,6 +67,37 @@ a:hover{
 input, a, button, textarea{
 	&:focus{
 		outline: none;
+	}
+}
+
+/* Оформление форм */
+.form{
+	/*Поле для ввода*/
+	&-input{
+		margin: 2rem 0;
+		display: block;
+		width: 100%;
+		background: 1px solid @border-input;
+		padding: 1.5rem;
+	}
+	/*Подписи к полям*/
+	label{
+		display: inline-block;
+		padding: 0.5rem;
+		background: @light;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		font-size: 1.3rem; 
+		font-weight: 100; 
+	}
+	/*Кнопка оставьте заявку*/
+	&-btn{
+		display: block;
+		height: 5.5rem;
+		width: 100%;
+		font-size: 1.6rem;
+		padding-top: 1.8rem;
 	}
 }
 /* Typography */
@@ -134,33 +166,7 @@ section{
 		font-size: 1.9rem;
 	} 		
    }
-	/*Поле для ввода*/
-	&-input{
-		margin: 2rem 0;
-		display: block;
-		width: 100%;
-		background: 1px solid @border-input;
-		padding: 1.5rem;
-	}
-	/*Подписи к полям*/
-	label{
-		display: inline-block;
-		padding: 0.5rem;
-		background: @light;
-		position: absolute;
-		left: 50%;
-		transform: translateX(-50%) translateY(-50%);
-		font-size: 1.3rem; 
-		font-weight: 100;
-	}
-	/*Кнопка оставьте заявку*/
-	&-btn{
-		display: block;
-		height: 5.5rem;
-		width: 100%;
-		font-size: 1.6rem;
-		padding-top: 1.8rem;
-	}
+	
 	/*Подпись под кнопкой*/
 	small{
 		display: block;
@@ -313,6 +319,26 @@ section{
     font-size: 1.5rem;
 }
 	}
+
+	@media (max-width: 1199px){
+		.feedback{
+			&-form{
+				padding: 3rem 5rem;
+			}
+			.fotorama{
+				margin-bottom: 3rem;	
+			}
+		}
+		.all-inclusive{
+			min-height: 11rem;
+		}
+		.problems{
+    &-list{
+      min-height: 40rem;
+      margin-bottom: 2rem;
+    }
+  }
+	}
 @media (max-width: 991px){
 	.main{
 		background-position: top right;
@@ -341,8 +367,78 @@ section{
 	  }
 	  .section-header_light{
 	  	margin-bottom: 0;
+	  }	
+	  .feedback{
+	  	&-form{
+	  		label{
+	  			transform: translate(-50%, 50%);
+	  		}
+	  	}
 	  }
+	  .hand{
+	  	display: none;
+	  }
+	  .problems{
+	  	&-list{
+	  		min-height: auto;
+	  	}
+	  }
+	  .problems{
+		&-girl{
+			display: none;
+		}
+	}
 }
+/* Схема работы */
+.scheme{
+	background: url(../img/scheme/schrmr-bg.png) bottom right -10rem no-repeat;
+	background-size: 65rem;
+	&-block{
+		min-height: 30rem;
+	}
+	h3{
+		font-size: 2rem;
+		.bold();
+	}
+}
+.all-inclusive{
+	background: @bg-light;
+	.media{
+		h4{
+			.bold();
+			font-size: 1.6rem;
+		}
+		font-size: 1.3rem;
+		min-height: 8rem;
+		p{
+			font-size: 1.1rem;
+			min-height: 9rem;
+		}
+	}
+}
+/* Все на 100% включено */
+.circle{
+	display: inline-block;
+	background-color: @icon-color;
+	height: 85%;
+    width: 85%;
+    border-radius: 50%;
+    margin-top: 3.45px;
+	&-border{
+		display: inline-block;
+		width: 5rem;
+		height: 5rem;
+		border: 2px solid @icon-color;
+		border-radius: 50%;
+		line-height: 4rem;
+		text-align: center;
+		color: #fff;
+		.bold();
+		font-size: 1.9rem;
+		
+	}
+}
+
 @media (max-width: 767px){
 	.main{
 		background-position: top left;
@@ -353,6 +449,21 @@ section{
 	.wrap-block{
 		text-align: center;
 	}
+	.feedback{
+		&-prev-btn{
+		left: 0;
+	}
+	&-next-btn{
+		right: 0;
+	}
+	}
+	.scheme{
+		background: none;
+		text-align: center;
+		&-block{
+		min-height: auto;
+	}
+}
 }
 @media (max-width: 510px){
 	.main-content h1{
@@ -360,7 +471,8 @@ section{
 }	
 }
 .feedback{
-	background: url(../img/feedback/) no-repeat center;
+	position: relative;	
+	background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
 	background-size: cover;
 	&-prev-btn{
 		left: -4rem;
@@ -388,7 +500,7 @@ section{
 			border-top-right-radius: 100px;
 		}
 	}
-	&-slider{
+	&-slider{	
 		padding: 5rem 6rem;
 		background-color: @light;
 		box-shadow: 6px 10px 18px 0px rgba(0,0,0,0.11);
@@ -422,7 +534,100 @@ section{
 			}
 		  }
 		}
+&-form{
+	background-color: @light;
+	text-align: center;
+	margin-top: 5rem;
+	padding: 4rem 10rem;
+	h3{
+		.bold();
+		font-size: 2rem;
 	}
+	label{
+		display: inline-block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%) translateY(50%);
+		background-color: #fff;
+		padding: 0 5px;
+	}
+	}
+	&-btn{
+		max-width: 30rem;
+		margin: auto;
+
+	}
+	.hand{
+		position: absolute;
+		bottom: 0;
+		left: 0; 
+		max-width: 30rem;
+	}
+}
+.form-btn.button {
+    max-width: 30rem;
+    margin: auto;
+    max-width: 30rem;
+}
+
+/* Развеем все опасения */
+
+.problems{
+	position: relative;
+	&-girl{
+		position: absolute;
+		width: 30rem;
+		bottom: 0;
+		left: 50%;
+		margin-left: -19rem;
+	}
+	&-list{
+		border: 4px solid;
+		padding: 2rem;
+		min-height: 28rem;
+		h4{
+			font-size: 2.1rem;
+			.bold();
+		}
+		ul{
+			list-style: none;
+			padding-left: 0;
+			padding-top: 2rem;
+			li{
+				&:before{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: -3px;
+				transaform: translateY(-50%);
+				width: 3rem;
+				height: 3rem;
+				background-color: #000;
+				display: inline-block;
+			}
+			padding-left: 3.5rem;
+			position: relative;
+				margin-bottom: 3rem;
+			}
+		}
+		&_bad{
+			border-color: @problems-color; 
+			h4{
+				opacity: 0.5;
+			}
+			ul li::before{
+				background: url(../img/cancel.png) center no-repeat;
+				background-size: 60%;
+			}
+		  }
+		  &_good{
+		  	ul li::before{
+				background: url(../img/checked.png) center no-repeat;
+				background-size: 60%;
+			}
+		  }
+	}
+}
 /* Оформление модальных окон */
 
  .popup{
