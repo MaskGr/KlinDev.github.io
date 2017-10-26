@@ -1,0 +1,190 @@
+/* Fonts */
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('../font/Montserrat-Regular.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Black';
+  src: url('../font/Montserrat-Black.ttf');
+}
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../font/Montserrat-Bold.ttf');
+}
+@font-face {
+  font-family: 'CrimsonText-Regular';
+  src: url('../font/CrimsonText-Regular.ttf');
+}
+/* Colors */
+/* Variables */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+header {
+  background: #fff;
+  font-family: 'Montserrat-Regular';
+}
+header .container .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 89px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .container .top .nav-menu {
+  width: 127%;
+}
+header .container .top .nav-menu ul {
+  list-style: none;
+}
+header .container .top .nav-menu ul li {
+  margin-right: 29px;
+  display: inline-block;
+}
+header .container .top .nav-menu ul li a {
+  color: #343e5c;
+}
+header .container .shop-sign {
+  display: inline-block;
+  margin-left: 34px;
+}
+header .container .shop-sign span {
+  display: inline-block;
+  background: #e3e8f0;
+  width: 24px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  padding: 2px;
+  margin-right: 4px;
+}
+header .container .shop-sign a {
+  padding-left: 22px;
+  color: #343e5c;
+  text-transform: uppercase;
+}
+header .container .shop-sign a::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url(../img/Shop-Icon.png) no-repeat;
+  left: 82px;
+}
+header .container .shop-sign button {
+  background: none;
+  border: 2px solid #e3e8f0;
+  padding: 9px 17px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  outline: none;
+}
+header .container-fluid_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 57px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid #f0f2f7;
+  text-transform: uppercase;
+}
+header .container-fluid_block .menu {
+  width: 115%;
+  margin: 18px 0px 10px 59px;
+}
+header .container-fluid_block .menu ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  list-style: none;
+}
+header .container-fluid_block .menu ul li {
+  margin-right: 29px;
+}
+header .container-fluid_block .menu ul li a {
+  color: #b9bed1;
+}
+header .container-fluid_block .support-search {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 115%;
+  margin: -95px;
+}
+header .container-fluid_block .support-search a {
+  padding-top: 7px;
+  text-transform: uppercase;
+  color: #b9bed1;
+}
+header .container-fluid_block .support-search .btn {
+  margin: 0px 10px 0px 50px;
+}
+header .container-fluid_block .support-search .btn img {
+  width: 1.3rem;
+}
+header .container-fluid_block .support-search input {
+  border: none;
+  outline: none;
+}
+header .container-fluid_block .support-search input::-webkit-input-placeholder {
+  color: #b9bed1;
+}
+section {
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  background: url(../img/section-bg.jpg) no-repeat center;
+  background-size: cover;
+  padding: 103px 0px;
+}
+section .title-block {
+  margin-left: -37px;
+}
+section .title-block h1 {
+  font-family: 'Montserrat-Bold';
+  font-size: 42px;
+  color: #ffffff;
+  margin-top: 33px;
+}
+section .title-block p {
+  color: #a8a9aa;
+  font-family: 'CrimsonText-Regular';
+  font-size: 16px;
+}
+section .title-block button {
+  margin-top: 65px;
+  width: 165px;
+  height: 40px;
+  border-radius: 50px;
+  color: #fff;
+  border: none;
+  background: #2754eb;
+  text-transform: uppercase;
+  font-family: 'Montserrat-Regular';
+  outline: none;
+}
+section .title-block button:hover {
+  background: #fff;
+  border: 1px solid #2754eb;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #2754eb;
+}
+section img.phone {
+  display: block;
+  position: absolute;
+  top: -102px;
+  left: -30px;
+}
+/* Адаптив */

@@ -1,0 +1,209 @@
+/* Fonts */
+@font-face{
+	font-family: 'Montserrat-Regular';
+	src: url('../font/Montserrat-Regular.ttf');
+}
+	@font-face{
+		font-family: 'Montserrat-Black';
+	src: url('../font/Montserrat-Black.ttf');
+}
+@font-face{
+	font-family: 'Montserrat-Bold';
+	src: url('../font/Montserrat-Bold.ttf');
+}
+@font-face{
+	font-family: 'CrimsonText-Regular';
+	src: url('../font/CrimsonText-Regular.ttf');
+}
+
+/* Colors */
+@header-links: #343e5c;
+@nav-links: #b9bed1;
+@light: #fff;
+
+/* Variables */   
+.reg(){
+	font-family: 'Montserrat-Regular';
+}
+.bold(){
+	font-family: 'Montserrat-Bold';
+}
+.black(){
+	font-family: 'Montserrat-Black';
+}
+.crimson-reg(){
+	font-family: 'CrimsonText-Regular';
+}
+
+
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
+header{
+	background: #fff;
+	.reg(); 
+		.container{
+			.top{
+			display: flex;
+		    width: 100%;
+		    height: 89px;
+		    align-items: center;
+		    .nav-menu{ 
+		    	width: 127%;
+		    ul{
+		    list-style: none;
+	   		 li{
+	    	margin-right: 29px;
+    		display: inline-block;
+    		a{
+    			color: @header-links;
+    		}
+			    }
+			  }
+			}
+		}
+		.shop-sign {
+       		display: inline-block;
+       		    margin-left: 34px;
+       		span {
+				    display: inline-block;
+				    background: #e3e8f0;
+				    width: 24px;
+				    height: 25px;
+				    text-align: center;
+				    border-radius: 50%;
+				    padding: 2px;
+				        margin-right: 4px;
+					}
+    		a{
+    			padding-left: 22px;
+    			color: @header-links;
+    			text-transform: uppercase;
+    			&::before{
+    				content: '';
+				    position: absolute;
+				    width: 24px;
+				    height: 24px;
+				    background: url(../img/Shop-Icon.png) no-repeat;
+				      left: 82px;
+	    			}
+    		}	
+
+    		button{
+    			background: none;
+			    border: 2px solid #e3e8f0;
+			    padding: 9px 17px;
+			    border-radius: 30px;
+			    font-weight: bold;
+			    text-transform: uppercase;
+			    outline: none;
+    		}
+		}
+}
+
+		// Нижний блок в хедере
+	.container-fluid_block{
+	 display: flex;
+    width: 100%;
+    height: 57px;
+    align-items: center;
+    border-top: 1px solid #f0f2f7;
+    text-transform: uppercase;
+    .menu{ 
+    	width: 115%;
+    	    margin: 18px 0px 10px 59px;
+    	ul{
+    		display: inline-flex;
+    		list-style: none;
+    		li{
+    			margin-right: 29px;
+    		 a{
+    		 	color: @nav-links;
+    		 }
+    		} 
+    	}
+    }
+	// Блок с кнопкой поиска
+    .support-search {
+    display: inline-flex;
+    width: 115%;
+    margin: -95px;
+    a{
+    	padding-top: 7px;
+    	text-transform: uppercase;
+    	color: @nav-links;
+    }
+    .btn{
+    	margin: 0px 10px 0px 50px;
+    	img{
+    		width: 1.3rem;
+    	}
+    }
+    input{
+    	border: none;
+    	outline: none;
+    	&::-webkit-input-placeholder{
+    		color: @nav-links; 
+    	}
+   }
+}
+}
+}
+// Главная секция
+section{
+	display: inline-block;
+	width: 100%;
+	height: 500px;
+	background: url(../img/section-bg.jpg) no-repeat center;
+	background-size: cover;
+	padding: 103px 0px;
+	.title-block {
+    margin-left: -37px;
+
+	h1{
+		.bold();
+		font-size: 42px;
+		color: @light;
+		margin-top: 33px;
+	}
+	p{
+	color: #a8a9aa;
+	.crimson-reg();
+	font-size: 16px;
+	}
+	button{
+		margin-top: 65px;
+		width: 165px;
+		height: 40px;
+		border-radius: 50px;
+		color: #fff;
+		border: none;
+    background: #2754eb;
+    text-transform: uppercase;
+    .reg();
+    outline: none;
+    &:hover{
+		background: #fff;
+		border: 1px solid #2754eb;
+		transition: .3s;
+		color: #2754eb;
+	}
+	}
+	
+}
+img.phone {
+    display: block;
+    position: absolute;
+    top: -102px;
+        left: -30px;
+}
+}
+
+
+/* Адаптив */
+
+
+
