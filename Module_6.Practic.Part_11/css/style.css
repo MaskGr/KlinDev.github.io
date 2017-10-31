@@ -373,7 +373,7 @@ section {
 }
 .all-inclusive .media {
   font-size: 1.3rem;
-  min-height: 8rem;
+  min-height: 13.7rem;
 }
 .all-inclusive .media h4 {
   font-family: 'ProximaNova_bold', sans-serif;
@@ -410,10 +410,9 @@ section {
 .circle {
   display: inline-block;
   background-color: #46b814;
-  height: 85%;
-  width: 85%;
+  height: 100%;
+  width: 100%;
   border-radius: 50%;
-  margin-top: 3.45px;
 }
 .circle-border {
   display: inline-block;
@@ -426,6 +425,7 @@ section {
   color: #fff;
   font-family: 'ProximaNova_bold', sans-serif;
   font-size: 1.9rem;
+  padding: 3px;
 }
 @media (max-width: 767px) {
   .main {
