@@ -515,7 +515,7 @@ section{
 }
 @media (max-width: 510px){
 	.main-content h1{
-		font-size: 2.8rem;
+		font-size: 2.4rem;
 }
 .materials-block {
     margin-top: 30px;
@@ -718,18 +718,51 @@ section{
 		margin-top: 4rem;
 	}
 	.tour{
-	background: none;
+	background-position-x: left;
 }
+.feedback{
+		&-form{
+			padding: 0rem 2rem;
+			label{
+				top: -30%;
+			}
+		}
+
+	}
 }
 @media(max-width: 414px){
 	.upsell-block{
 		margin-top: 4rem;
 	}
 	.tour{
-	background: none;
+	background-position-x: left;
 }
-}
+.feedback{
+		&-form{
+			padding: 0rem 2rem;
+			label{
+				top: -30%;
+			}
+		}
 
+	}
+}
+@media(max-width: 330px){
+	.main-form{
+		padding: 4rem 3rem;
+	}
+	.feedback{
+		&-form{
+			padding: 0rem 2rem;
+			label{
+				top: -30%;
+			}
+		}
+	}
+	.tour{
+		background-position-x: left;
+	}
+}
 
 /* Оформление модальных окон */
 
