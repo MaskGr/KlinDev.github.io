@@ -79,6 +79,7 @@ textarea:focus {
 /* Typography */
 section {
   padding: 10rem 0;
+  overflow-x: hidden;
 }
 /* main */
 .header {
