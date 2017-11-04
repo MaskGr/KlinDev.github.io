@@ -475,10 +475,10 @@ section {
   background-size: cover;
 }
 .feedback-prev-btn {
-  left: -4rem;
+  left: -2rem;
 }
 .feedback-next-btn {
-  right: -4rem;
+  right: -2rem;
 }
 .feedback-text {
   position: relative;
