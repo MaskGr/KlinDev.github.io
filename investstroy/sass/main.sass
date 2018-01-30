@@ -1,0 +1,205 @@
+@import "colors"
+@import "reset" 
+@import "fontello"
+
+
+html
+	font-size: 14px
+/* Цвет фона сайта */ 
+body
+	background: $body-bg 
+	color: $dark
+	font-family: 'Roboto', sans-serif
+	padding-top: 40px
+	margin: 0	
+	font-size: 14px
+a
+	color: $active-color
+.btn
+	display: inline-block
+	padding: 20px 30px
+	text-decoration: none
+	color: $white
+	border-radius: 5px
+	font-size: 16px
+	background-color: $active-color 
+	font-weight: 700
+	&-primary
+		border-bottom: 5px solid darken($active-color, 10%)
+		&:hover
+			background-color: lighten($active-color, 2%)
+.top-nav
+	background: $white 
+	padding: 15px
+	&_btn
+		width: 30px
+		height: 30px
+		background-color: transparent
+		border: none
+		font-size: 18px
+		position: absolute
+		right: 15px
+		top: -50px
+		display: none
+		outline: none
+		&:hover
+			cursor: pointer
+
+	&_menu
+		list-style: none
+		padding: 0
+		display: flex
+		li
+			margin-right: 34px
+			a
+				text-transform: uppercase
+				color: $text-color
+				text-decoration: none
+				font-weight: 700
+				&::after
+					content: ''
+					display: block
+					width: 100%
+					height: 2px
+					background-color: $active-color
+					ctive-color
+					transform: translateY(37px) scale(0)
+					transition: all 0.2s
+				&:hover
+				 text-decoration: none
+				 &::after
+				 	transform: translateY(38px) scale(1)
+				 /* Left sidebar*/	
+.left-sidebar
+	margin-top: 4rem	
+	&_object
+		display: none 
+	&_btn
+		background-color: $white
+		padding: 15px
+		position: relative
+		display: none 
+		&:hover
+			cursor: pointer
+		&::after
+			content: ''
+			display: inline-block
+			position: absolute
+			top: 50%
+			margin-top: -10px
+			right: 15px 
+			width: 15px
+			height: 15px
+			border-bottom: 2px solid $dark
+			border-right: 2px solid $dark	
+			transform: rotate(45deg)
+	&_menu
+		list-style: none
+		padding: 0
+		background-color: $white
+		li
+			transition: 0.1s
+			&:first-child
+				// padding-top: 29px
+			&:last-child
+				// padding-bottom: 29px
+			&:hover
+				background-color: $active-color
+				a
+					color: $white
+			a
+				display: block
+				padding: 15px 29px
+				text-decoration: none
+				color: $dark
+				font-size: 16px
+				font-weight: 400
+	&_object
+		margin-top: 30px
+		background-color: $white
+		img
+			width: 100%
+		&-description
+			padding: 30px
+			h3
+				text-transform: uppercase
+				font-weight: 400
+				margin-top: 0
+/* Content */
+.content
+	margin-top: 40px
+	h2
+		font-size: 24px
+		color: $text-color
+		margin-bottom: 34px;
+	p
+		font-size: 14px
+		color: $dark
+		font-weight: 400
+.directions 
+	margin-top: 80px
+	&-block
+		background-color: $white 
+		text-align: center
+		margin: 10px 
+		background-position: bottom center
+		background-repeat: no-repeat 
+		height: 220px
+	.slick-slide
+		height: 220px;
+		h3 
+			color: $active-color
+			padding: 20px 34px 
+			font-size: 14px
+			font-weight: 400 
+/* footer */
+.footer
+	background-color: $text-color
+	color: $footer-text
+	padding: 59px 0
+	margin-top: 60px
+	&-policy-link
+		font-size: 12px
+	p
+	margin-bottom: 14px
+	a
+		color: $footer-text
+		text-decoration: none
+		&:hover
+			color: $white 
+	small
+		display: block
+		margin-top: 56px
+		line-height: 16px
+		font-size: 10px
+		max-width: 80%
+	ul
+		padding: 0
+		list-style: none
+		li 
+			line-height: 32px
+			margin-left: 30px;
+	&-contacts
+		text-align: right
+		&_phone
+			font-weight: 700
+			font-size: 20px
+			color: $active-color 
+	&-social-links
+		@extend .footer-contacts
+		li
+			display: inline-block
+			a
+				display: inline-block
+				width: 32px; 
+				height: 32px;
+				background-color: rgba($white, 0.1)
+				text-align: center
+				border-radius: 50%
+				font-size: 12px
+
+@import "media"
+						
+
+
+

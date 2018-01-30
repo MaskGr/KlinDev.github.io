@@ -1,0 +1,76 @@
+//* Адаптив для сайта *0/
+@media (max-width: 767px)
+	html
+		font-size: 5px 
+	.top-nav
+		&_btn
+			display: block
+		&_menu
+			flex-direction: column
+			display: none
+			&__active
+				display: flex
+				margin: 0
+			li
+				line-height: 2
+			a
+				&::after
+					display: none
+			
+	.left-sidebar
+		&_btn
+			display: block
+		&_menu
+			display: none
+			&__active
+				display: block
+	.copy
+		text-align: center
+		small
+			display: block
+			margin-top: 36px
+			text-align: center
+			max-width: 100%
+	.footer
+		ul
+			li
+				margin: 0
+		&-contacts
+			text-align: left		
+				
+
+@media (min-width: 767px) and (max-width: 991px)
+	html
+		font-size: 5px 
+	.top-nav
+		&_btn
+			display: block
+		&_menu
+			display: none
+			margin: 0
+			&__active
+				display: flex
+				margin: 0
+				justify-content: space-around
+			li
+				line-height: 2
+				margin-right: 0
+			a
+				&::after
+					display: none
+	.left-sidebar
+		&_btn
+			display: block
+		&_menu 
+			display: none
+			&__active
+				display: block
+			
+	@media (min-width: 992px) and (max-width: 1400px)
+		.top-nav
+			&_menu
+				display: flex 
+
+						
+			
+
