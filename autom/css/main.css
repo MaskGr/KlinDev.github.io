@@ -20,7 +20,8 @@ li {
   list-style: none; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 10px; }
 
 .main-section {
   background: url(../img/main-section/bg.jpg) no-repeat center;
@@ -28,7 +29,7 @@ html {
   background-position-y: 0; }
 
 .btn {
-  font-size: 20px;
+  font-size: 2rem;
   background-color: #d12f22;
   color: #fff;
   padding: 10px;
@@ -61,7 +62,7 @@ header {
 .adress__text {
   font-family: "BebasRegular";
   margin-left: 15px;
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold; }
 
 .text_red {
@@ -73,7 +74,7 @@ header {
 
 .link {
   color: #fff;
-  font-size: 22px;
+  font-size: 2.2rem;
   text-decoration: none;
   border-bottom: 1px dashed;
   cursor: pointer;
@@ -94,7 +95,7 @@ header {
   line-height: 1.1; }
 
 .callback__number {
-  font-size: 32px;
+  font-size: 3.2rem;
   font-weight: bold;
   letter-spacing: 0.5px; }
 
@@ -111,7 +112,7 @@ header {
   text-align: center;
   color: #fff;
   font-family: "BebasRegular";
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: bold;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.55);
   margin-top: 80px;
@@ -131,7 +132,7 @@ header {
   margin-right: 20px;
   color: #fff;
   font-family: "BebasRegular";
-  font-size: 20px;
+  font-size: 2rem;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
   line-height: 18px;
   text-decoration: none;
@@ -160,7 +161,7 @@ header {
   color: #fff;
   padding: 20px 30px;
   font-family: "BebasRegular";
-  font-size: 20px;
+  font-size: 2rem;
   text-decoration: none;
   border-left: 1px solid #3b3b3b;
   transition: 0.4s;
@@ -181,14 +182,14 @@ header {
   .garantiya__time {
     color: #fff;
     font-family: "BebasRegular";
-    font-size: 23px;
+    font-size: 2.3rem;
     font-weight: bold;
     margin-right: 5px;
     padding: 7px	5px; }
   .garantiya__text {
     color: #fff;
     font-family: "RobotoRegular";
-    font-size: 15px;
+    font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase; }
 
@@ -229,7 +230,7 @@ header {
     padding: 5px;
     color: #fff;
     font-family: "BebasRegular";
-    font-size: 18px;
+    font-size: 1.8rem;
     text-decoration: none; }
   .tabs__item:hover {
     background-color: #2a2a2a;
@@ -238,7 +239,7 @@ header {
     content: '>';
     position: absolute;
     color: #d12f22;
-    font-size: 30px;
+    font-size: 3rem;
     font-family: "BebasRegular";
     top: 96%;
     left: 48%;
@@ -279,7 +280,7 @@ header {
 .tabs-content__item {
   display: inline-flex;
   margin: 0 13px 5px 0;
-  font-size: 20px;
+  font-size: 2rem;
   color: #fff;
   font-family: "BebasRegular";
   letter-spacing: 0.5px; }
@@ -302,7 +303,7 @@ header {
   .about-as p {
     color: #050505;
     font-family: "RobotoRegular";
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: bold; }
 
 .section-header__title {
@@ -323,7 +324,7 @@ header {
       text-align: center; }
       .about-as__items_wrap article figure h3 {
         font-family: "BebasRegular";
-        font-size: 25px;
+        font-size: 2.5rem;
         font-weight: bold;
         text-transform: uppercase;
         text-align: right;
@@ -338,7 +339,7 @@ header {
 .figcapture {
   color: #050505;
   font-family: "RobotoRegular";
-  font-size: 14px; }
+  font-size: 1.4rem; }
   .figcapture:hover {
     transform: scaleX(0.1); }
 
@@ -350,7 +351,7 @@ header {
 
 .order__price {
   font-family: "RobotoRegular";
-  font-size: 23px;
+  font-size: 2.3rem;
   color: #5d5d5d; }
 
 .order__btn {
@@ -366,14 +367,14 @@ header {
   padding: 20px;
   margin-bottom: 15px;
   border-radius: 5px;
-  font-size: 21px;
+  font-size: 2.1rem;
   text-align: center;
   font-family: "BebasRegular"; }
 
 .services__wrap {
   display: flex;
-  margin-bottom: 15px;
-  font-size: 20px;
+  margin-bottom: 20px;
+  font-size: 2rem;
   color: #fff;
   font-family: "BebasRegular"; }
 
@@ -406,10 +407,11 @@ header {
   display: flex;
   flex-direction: column;
   padding: 30px;
-  box-shadow: 0 0 20px 4px black; }
+  box-shadow: 0 0 20px 4px black;
+  border-radius: 6px; }
   .popup__form input {
     margin-bottom: 15px;
-    font-size: 21px;
+    font-size: 2.1rem;
     padding: 10px;
     text-align: center;
     font-family: "BebasRegular";
@@ -424,7 +426,7 @@ header {
   width: 30px;
   height: 30px;
   background: #fff;
-  font-size: 20px;
+  font-size: 2rem;
   right: -9px;
   text-align: center;
   border-radius: 50%;
@@ -446,7 +448,7 @@ header {
   right: 0; }
 
 .popup__btn {
-  font-size: 24px;
+  font-size: 2.4rem;
   cursor: pointer;
   font-family: "BebasRegular";
   border-radius: 5px; }
@@ -461,13 +463,13 @@ header {
 .title {
   padding: 0 20px;
   font-family: "BebasRegular";
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: bold;
   text-transform: uppercase; }
 
 .section-header__text {
   color: #050505;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: bold;
   line-height: 22px; }
 
@@ -485,7 +487,7 @@ header {
   margin-bottom: 40px;
   color: #050505;
   font-family: "RobotoRegular";
-  font-size: 16px; }
+  font-size: 1.6rem; }
 
 .work-types__btn {
   padding: 15px 45px; }
@@ -498,14 +500,14 @@ header {
 .work-types__title {
   color: #050505;
   font-family: "BebasRegular";
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: bold; }
 
 .work-types__btn {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0);
   color: #ffffff;
   font-family: "BebasRegular";
-  font-size: 20px; }
+  font-size: 2rem; }
 
 .work-types__description {
   width: 55%; }
@@ -518,7 +520,7 @@ footer {
 .footer__logo {
   color: #fff;
   font-family: "BebasRegular";
-  font-size: 20px;
+  font-size: 2rem;
   font-weight: bold; }
 
 .footer-menu__list {
@@ -534,7 +536,7 @@ footer {
   margin-right: 28px;
   color: #fff;
   font-family: "BebasRegular";
-  font-size: 20px;
+  font-size: 2rem;
   text-decoration: none;
   border-bottom: 1px dashed #fff;
   transition: 0.4s;
@@ -565,14 +567,21 @@ footer {
 
 .dropdown__close {
   position: absolute;
-  top: 30px;
-  right: 50px;
+  top: 0;
+  right: 2.5rem;
   cursor: pointer;
-  color: #fff;
-  font-size: 50px;
+  color: #525252;
+  font-size: 5rem;
   transition: .5s; }
   .dropdown__close:hover {
     transform: translateX(-35%); }
+
+.services__wrap .anticor {
+  margin-left: 1rem;
+  border-bottom: 1px dashed #444444;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400; }
 
 @media (max-width: 1200px) {
   header {
@@ -620,7 +629,7 @@ footer {
   .mobile-menu__btn {
     display: block;
     text-decoration: none;
-    font-size: 25px; }
+    font-size: 2.5rem; }
   .menu-nav__items {
     display: none;
     transition: 0.4s; }
@@ -642,28 +651,29 @@ footer {
     padding: 0 15px; } }
 
 @media (max-width: 768px) {
-  .popup__content {
-    margin: 50% auto; }
   .main-section__title {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.6);
-    font-size: 35px; }
+    font-size: 3.5rem; }
   .figcapture br {
     display: none; }
   .work-types__section-header {
     flex-direction: column; }
   .work-types__title {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    font-size: 2.8rem; }
   .work-types__wrap {
     flex-direction: column-reverse;
     align-items: center;
     text-align: center; }
   .work-types__text {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    font-size: 1.4rem; }
   .lines {
     display: none; }
   footer {
-    border-top: 15px dashed #3d3c3c; }
+    border-top: 15px dashed #3d3c3c;
+    margin-top: 2rem; }
   .logo {
     display: block;
     position: inherit;
@@ -689,11 +699,12 @@ footer {
     padding: 0 30px; }
   .main-section__container {
     justify-content: center;
-    padding: 15px; }
-    .main-section__container .callback {
-      margin-left: 30px; }
+    padding: 15px;
+    text-align: center; }
+  .callback__number {
+    padding: 1rem 0 0.5rem; }
   .link {
-    font-size: 20px; }
+    font-size: 2rem; }
   .info {
     margin: 35px auto;
     flex-wrap: wrap;
@@ -716,4 +727,28 @@ footer {
   .footer-menu__list {
     margin-bottom: 30px; }
   .popup__content {
-    width: 90%; } }
+    width: 90%; }
+  .order__wrap {
+    flex-direction: column; }
+  .order__price {
+    margin-bottom: 15px; }
+  .order__btn {
+    padding: 1rem 6rem; }
+  .about-as__items_wrap article figure {
+    max-width: 300px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 10px; }
+  .tabs__wrap_mobile {
+    max-width: 300px;
+    margin: 0 auto; }
+  .figure__img {
+    margin-bottom: 15px; }
+  .popup__form input, #order-comment {
+    font-size: 1.8rem; }
+  .popup__content {
+    margin: 20% auto; }
+  .section-header {
+    padding: 40px 8px; }
+  .title {
+    font-size: 3.5rem; } }
