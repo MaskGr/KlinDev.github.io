@@ -1,0 +1,33 @@
+body{
+	max-width: 1200px;
+}
+p{
+	margin-bottom: 12px;
+}
+h1,h2,h3{
+	font-weight: 400;
+	margin: 0;
+}
+h1{
+font-size: 36px;
+}
+
+h2{
+	font-size: 32px;
+	border-bottom: 1px solid grey;
+	margin-bottom: 8px;
+}
+h3{
+	font-size: 20px;
+}
+
+#header, #footer{  
+	text-align: center;
+}
+#header{
+	margin-bottom: 32px;
+}
+
+#footer{
+	margin-top: 64px;
+}
