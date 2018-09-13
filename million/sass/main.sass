@@ -1,0 +1,163 @@
+@import "_colors.sass"
+@import "_fonts.scss"   
+@import "_reset.sass"   	
+  
+html 
+	box-sizing: border-box 
+	font-size: 10px
+ 
+body
+	background-image: url(../img/bg.jpg)
+	background-position: 50% 0
+	
+.container
+	display: block
+	max-width: 944px
+	margin: 0 auto 
+header
+	display: flex
+	justify-content: center
+	align-items: center 
+	margin-bottom: 0.6rem 
+
+.autorization  
+	display: flex
+	align-items: center
+	padding: 0.8rem 1.6rem
+	&__input
+		display: block 
+		background-color: #212121
+		margin-left: 0.7rem 
+		padding: 0.8rem 1.6rem 
+		font-family: $reg
+		color: $grey
+		font-size: 11px 
+		border: none
+
+.registr 
+	margin: 0 1.2rem 0 0.7rem 
+	&__link 
+		background-color: $green
+		padding: 0.8rem 1.6rem
+		color: $black 
+		font-family: $bold 
+		font-size: 11px    
+		font-weight: 400 
+		text-transform: uppercase
+.btn
+	display: block
+	background-color: #292929
+	padding: 0.8rem 1.6rem
+	font-family: $reg
+	font-size: 11px
+	color: #7e7e7e
+	border: none
+	outline: none   
+	text-transform: uppercase
+	&__enter
+		margin-left: 0.8rem
+.btn_change-lang
+	display: block
+	position: relative
+	padding: 0.8rem	1.6rem 0.8rem 3.5rem 
+	&:before
+	 display: block
+  content: ''
+  width: 20px
+  height: 15px  
+  z-index: 100
+  position: absolute
+  background: url(../img/flag.png) no-repeat center
+  top: 50%
+  left: 24%
+  transform: translate(-50%, -50%)
+
+.menu
+	display: flex	
+	background-color: $dark-grey
+.menu__item 
+	display: block
+	padding: 1.6rem 7.8rem
+	color: $white
+	font-family: $reg  
+	font-size: 14px
+	font-weight: 400 
+ text-transform: uppercase 
+ border-left: 1px solid $grey
+ &:hover 
+		background-color: #00ff5a
+		color: $black
+	&_green
+		background-color: #00ff5a
+		color: $black  
+.logo-block
+	margin-right: 6rem	
+
+.tabs-list
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-bottom: 2.5rem 
+	&__item
+		display: flex
+		justify-content: center
+		align-items: center
+		background-color: $dark-grey
+		padding: 1.4rem 10.4rem
+		color: $grey  
+		font-family: $reg
+		font-size: 14px
+		font-weight: 400
+		text-transform: uppercase
+		cursor: pointer
+		&_active
+			color: $white
+	&__icon
+		margin-right: 1.2rem
+.tabs
+	margin-bottom: 14rem
+.tabs-content
+	display: flex
+ flex-wrap: wrap
+ justify-content: space-between
+ align-items: center
+	&__item
+		background-color: $dark-grey
+		max-width: 303px
+		margin-bottom: 2.2rem
+	&__img 
+		width: 100%
+	&__wrap
+		padding: 2.1rem 1rem 1.2rem 2.6rem
+	&__title 
+		color: $white
+		font-family: $reg
+		font-size: 20px
+		font-weight: 400
+		text-transform: uppercase
+		min-height: 3rem
+	&__text
+		display: block
+		padding: 1.7rem 0 1.5rem
+		color: #747474
+		font-family: $reg
+		font-size: 14px
+		font-weight: 400
+	&__btn
+		display: block
+		background-color: $green
+		padding: 0.9rem 1rem	
+		color: $black
+		font-family: $reg
+		font-size: 14px
+		font-weight: 400
+		border-radius: 0.3rem
+		text-transform: uppercase
+		border: none
+		&:hover
+			background-color: #38cb2d
+
+nav 
+ margin-bottom: 29.7rem
+
+@import "_media.scss"
